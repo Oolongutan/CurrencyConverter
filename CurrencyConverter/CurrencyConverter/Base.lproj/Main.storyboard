@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A6l-ox-2tE">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bqo-4E-IDZ">
+                                <rect key="frame" x="45" y="59" width="303" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CurrencyConverter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7t-En-fJ3">
+                                        <rect key="frame" x="79.000000000000014" y="0.0" width="145.33333333333337" height="379.66666666666669"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bvE-D1-r96">
+                                        <rect key="frame" x="0.0" y="379.66666666666674" width="303" height="379.33333333333326"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="139" translatesAutoresizingMaskIntoConstraints="NO" id="DE0-OH-m7k">
+                                                <rect key="frame" x="0.0" y="0.0" width="303" height="54.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter USD:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgs-bL-Nlv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="54.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FnK-6L-SdR">
+                                                        <rect key="frame" x="222.66666666666671" y="0.0" width="80.333333333333343" height="54.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="147" translatesAutoresizingMaskIntoConstraints="NO" id="dn7-F9-awu">
+                                                <rect key="frame" x="0.0" y="64.666666666666629" width="303" height="55"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Czech Koruna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7MV-E3-WSG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="55"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qyv-SQ-1Pg">
+                                                        <rect key="frame" x="254" y="0.0" width="51" height="55"/>
+                                                        <connections>
+                                                            <action selector="KorunaSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="nmV-VU-iYK"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="134" translatesAutoresizingMaskIntoConstraints="NO" id="ToS-vw-E6c">
+                                                <rect key="frame" x="0.0" y="129.66666666666669" width="303" height="55"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Egyptian Pound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40P-kD-2Kc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="55"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="c0a-bS-wTe">
+                                                        <rect key="frame" x="254" y="0.0" width="51" height="55"/>
+                                                        <connections>
+                                                            <action selector="EgyptSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="54c-W9-tKi"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="152" translatesAutoresizingMaskIntoConstraints="NO" id="Ikj-wu-OK3">
+                                                <rect key="frame" x="0.0" y="194.66666666666669" width="303" height="55"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aruban Florin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5m-a9-Zdg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="102" height="55"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fw4-qL-5Nr">
+                                                        <rect key="frame" x="254" y="0.0" width="51" height="55"/>
+                                                        <connections>
+                                                            <action selector="ArubanSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="fkE-ze-qmb"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="117" translatesAutoresizingMaskIntoConstraints="NO" id="CQs-nY-N8C">
+                                                <rect key="frame" x="0.0" y="259.66666666666669" width="303" height="54.666666666666686"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Norwegian Kroner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXd-3v-4sB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="137" height="54.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="I2d-V9-kaT">
+                                                        <rect key="frame" x="254" y="0.0" width="51" height="54.666666666666664"/>
+                                                        <connections>
+                                                            <action selector="KronerSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="XjE-Ym-HK3"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaG-4n-KEc">
+                                                <rect key="frame" x="109.33333333333334" y="324.33333333333331" width="84.333333333333343" height="55"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Convert"/>
+                                                <connections>
+                                                    <action selector="ConvertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E4K-Cf-3Il"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ToS-vw-E6c" firstAttribute="leading" secondItem="bvE-D1-r96" secondAttribute="leading" id="5sf-ng-LHN"/>
+                                            <constraint firstItem="DE0-OH-m7k" firstAttribute="leading" secondItem="bvE-D1-r96" secondAttribute="leading" id="5tQ-7R-Q7A"/>
+                                            <constraint firstItem="Ikj-wu-OK3" firstAttribute="leading" secondItem="bvE-D1-r96" secondAttribute="leading" id="DSN-nd-SQI"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ikj-wu-OK3" secondAttribute="trailing" id="Lbr-m8-jP1"/>
+                                            <constraint firstAttribute="trailing" secondItem="CQs-nY-N8C" secondAttribute="trailing" id="MYI-87-HbN"/>
+                                            <constraint firstAttribute="trailing" secondItem="ToS-vw-E6c" secondAttribute="trailing" id="TL1-gN-voJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="dn7-F9-awu" secondAttribute="trailing" id="heo-wi-ONz"/>
+                                            <constraint firstItem="CQs-nY-N8C" firstAttribute="leading" secondItem="bvE-D1-r96" secondAttribute="leading" id="rsH-3a-7bx"/>
+                                            <constraint firstAttribute="trailing" secondItem="DE0-OH-m7k" secondAttribute="trailing" id="sHy-u5-XY5"/>
+                                            <constraint firstItem="dn7-F9-awu" firstAttribute="leading" secondItem="bvE-D1-r96" secondAttribute="leading" id="uzb-8t-Qjl"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bqo-4E-IDZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6uv-4V-tCV"/>
+                            <constraint firstAttribute="bottom" secondItem="A6l-ox-2tE" secondAttribute="bottom" id="Bbl-G9-Msy"/>
+                            <constraint firstItem="A6l-ox-2tE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C2l-Oy-Gq1"/>
+                            <constraint firstItem="A6l-ox-2tE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Eaf-2h-sQJ"/>
+                            <constraint firstItem="A6l-ox-2tE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IQe-IP-4wT"/>
+                            <constraint firstItem="Bqo-4E-IDZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XkB-0I-Z07"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bqo-4E-IDZ" secondAttribute="bottom" id="kg8-bz-gvN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ArubanButton" destination="Fw4-qL-5Nr" id="kLt-tQ-AdC"/>
+                        <outlet property="EgyptButton" destination="c0a-bS-wTe" id="c8X-5u-F9Y"/>
+                        <outlet property="EnteredAmount" destination="FnK-6L-SdR" id="Sxj-1k-qez"/>
+                        <outlet property="KorunaButton" destination="qyv-SQ-1Pg" id="0gi-13-Nus"/>
+                        <outlet property="KronerButton" destination="I2d-V9-kaT" id="auf-o2-G3e"/>
+                        <segue destination="Ja4-w6-UFa" kind="presentation" identifier="toConvertedAmounts" id="StJ-AO-Z5v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-179.38931297709922" y="59.859154929577471"/>
+        </scene>
+        <!--Converted Amounts View-->
+        <scene sceneID="gJL-yD-6hb">
+            <objects>
+                <viewController id="Ja4-w6-UFa" customClass="ConvertedAmountsView" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MUi-zq-ClE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RDp-Lc-5lu">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="tKf-jz-hNj">
+                                <rect key="frame" x="87.333333333333329" y="264.33333333333326" width="218.66666666666669" height="313.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount in USD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5Z-TF-jUw">
+                                        <rect key="frame" x="0.0" y="0.0" width="218.66666666666666" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount in Czech Koruna" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBB-Ip-ael">
+                                        <rect key="frame" x="0.0" y="73.333333333333371" width="218.66666666666666" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount in Egyptian Pounds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awi-m2-6Z1">
+                                        <rect key="frame" x="0.0" y="146.66666666666669" width="218.66666666666666" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount in Aruban Florins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfL-sD-XpA">
+                                        <rect key="frame" x="0.0" y="220" width="218.66666666666666" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount in Norwegian Kroner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgj-Md-s6Z">
+                                        <rect key="frame" x="0.0" y="293.33333333333331" width="218.66666666666666" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cgj-Md-s6Z" firstAttribute="centerX" secondItem="tKf-jz-hNj" secondAttribute="centerX" id="8JQ-mD-d9N"/>
+                                    <constraint firstItem="h5Z-TF-jUw" firstAttribute="centerX" secondItem="tKf-jz-hNj" secondAttribute="centerX" id="Ccj-Ft-ahP"/>
+                                    <constraint firstItem="xfL-sD-XpA" firstAttribute="centerX" secondItem="tKf-jz-hNj" secondAttribute="centerX" id="DYx-K8-H1M"/>
+                                    <constraint firstItem="awi-m2-6Z1" firstAttribute="centerX" secondItem="tKf-jz-hNj" secondAttribute="centerX" id="Gkt-Yr-ncu"/>
+                                    <constraint firstItem="pBB-Ip-ael" firstAttribute="centerX" secondItem="tKf-jz-hNj" secondAttribute="centerX" id="bej-c2-wVV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tc5-QI-Py7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RDp-Lc-5lu" firstAttribute="top" secondItem="MUi-zq-ClE" secondAttribute="top" id="0EH-Se-gVu"/>
+                            <constraint firstItem="RDp-Lc-5lu" firstAttribute="leading" secondItem="MUi-zq-ClE" secondAttribute="leading" id="8dE-bZ-Cyt"/>
+                            <constraint firstAttribute="trailing" secondItem="RDp-Lc-5lu" secondAttribute="trailing" id="N7D-Vi-gLe"/>
+                            <constraint firstAttribute="bottom" secondItem="RDp-Lc-5lu" secondAttribute="bottom" id="d8B-wd-Z5g"/>
+                            <constraint firstItem="tKf-jz-hNj" firstAttribute="centerY" secondItem="MUi-zq-ClE" secondAttribute="centerY" id="pyi-oG-Nhq"/>
+                            <constraint firstItem="tKf-jz-hNj" firstAttribute="centerX" secondItem="MUi-zq-ClE" secondAttribute="centerX" id="r0l-dH-mms"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ArubanAmount" destination="xfL-sD-XpA" id="3Un-Li-QKT"/>
+                        <outlet property="EgyptAmount" destination="awi-m2-6Z1" id="PlO-LZ-yYY"/>
+                        <outlet property="KorunaAmount" destination="pBB-Ip-ael" id="cEC-hV-lch"/>
+                        <outlet property="KronerAmount" destination="cgj-Md-s6Z" id="GGM-QK-qgs"/>
+                        <outlet property="USDamount" destination="h5Z-TF-jUw" id="AE8-er-bsH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EvV-QW-I74" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="677" y="60"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
