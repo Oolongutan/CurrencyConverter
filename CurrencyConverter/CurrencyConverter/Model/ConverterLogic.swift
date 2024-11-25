@@ -19,7 +19,13 @@ struct ConverterLogic {
     var arubanSwitch = true
     var kronerSwitch = true
     
-    mutating func setConversionAmount(_ amount: String) -> Int {
+    enum InputError: Error {
+        case InputInvalid(reson: String)
+    }
+    mutating func setConversionAmount(_ amount: String) throws -> Int {
+        guard Int(amount) != nil else {
+            throw InputError.InputInvalid(reson: "Please enter an integer to continue.")
+        }
         convertAmount = Int(amount)!
         return convertAmount
     }
